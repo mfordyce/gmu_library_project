@@ -49,6 +49,10 @@ group :development do
   gem 'bootstrap-sass', '~> 3.3.3'
   gem 'autoprefixer-rails'
 
+  # added per Lab 7, class 4
+  gem 'kaminari'
+  gem 'kaminari-bootstrap', '~> 3.0.1'
+
 
 end
 
