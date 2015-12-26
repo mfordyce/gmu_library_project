@@ -6,13 +6,13 @@
   <header>
     <h2><%= @book.title %></h2>
   </header>
-
-  <p><label>Author:</label> <%= @book.author %></p>
-  <p><label>Pages:</label> <%= number_with_delimiter(@book.pages)%></p>
-  <p><label>Price:</label> <%= number_to_currency(@book.price) %></p>
+  <p><label>Book ID number:</label> <%= @book.id %></p>
+  <p><label>Author ID:</label> <%= @book.author_id %></p>
+  <p><label>ISBN:</label> <%= @book.isbn %></p>
+  <p><label>Pages:</label> <%= @book.pages %></p>
 
 </article><%= link_to 'All Books', books_path %>
-<%= link_to 'Edit', edit_book_path(@book) %>
+| <%= link_to 'Edit', edit_book_path(@book) %>
 
 <%= button_to 'Delete', @book,
                method: :delete,

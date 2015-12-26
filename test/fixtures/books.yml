@@ -1,13 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-hobbit:
-  title: 'The Hobbit'
-  author: 'Tolkein'
-  pages: 384
-  price: 22.68
+one:
+  isbn: MyString
+  title: MyString
+  author_id: 1
+  genre: MyString
+  abstract: MyText
+  pages: 1
+  image_cover_url: MyString
+  published_on: 2015-12-25
+  total_in_library: 1
+  created_at: 2015-12-25 15:06:31
+  updated_at: 2015-12-25 15:06:31
 
-ender:
-  title:  "Ender's Game"
-  author: 'Orson Scott Card'
-  pages: 352
-  price: 4.83
+two:
+  isbn: MyString
+  title: MyString
+  author_id: 1
+  genre: MyString
+  abstract: MyText
+  pages: 1
+  image_cover_url: MyString
+  published_on: 2015-12-25
+  total_in_library: 1
+  created_at: 2015-12-25 15:06:31
+  updated_at: 2015-12-25 15:06:31
