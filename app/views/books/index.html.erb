@@ -4,7 +4,10 @@
 <p>Available as <%= formatted_time(@available_at) %></p>
 <%= page_entries_info @books %>
 <ol>
+
 <% @books.each do |book| %>
-  <li><%= link_to image_tag(book.image_cover_url) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size = 5><%= link_to(book.title, book) %> by <%= book.author_id %></li>
+  <li><%= link_to (image_tag(book.image_cover_url)) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size = 5><%= link_to(book.title, book) %> by <%= book.author_id %></li>
   <p>&nbsp;</p>
 <% end %>
+</ol>
+<%= paginate @books %>

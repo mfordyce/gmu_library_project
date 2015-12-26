@@ -53,6 +53,8 @@ group :development do
   gem 'kaminari'
   gem 'kaminari-bootstrap', '~> 3.0.1'
 
+  # added for final project password
+  gem 'bcrypt', '~> 3.1.7'
 
 end
 

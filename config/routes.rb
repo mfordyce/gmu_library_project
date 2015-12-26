@@ -9,6 +9,15 @@ Rails.application.routes.draw do
   delete "/books/:id" => "books#destroy"
 
 
+  get "/users" => "users#index", as: 'users'
+  get "/users/new" => "users#new", as: 'new_user'
+  get "/users/:id" => "users#show", as: 'user'
+  post "/users" => "users#create"
+  get "/users/:id/edit" => "users#edit", as: 'edit_user'
+  patch "/users/:id" => "users#update"
+  delete "/users/:id" => "users#destroy"
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -27,7 +36,7 @@ Rails.application.routes.draw do
 
 
 
-  resources :books do
+  resources :books, :users do
      get 'page/:page', :action => :index, :on => :collection
   end
 
@@ -71,6 +80,11 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+namespace :users do
+  root to: "#index"
+end
+
 
 
 root 'books#index'
